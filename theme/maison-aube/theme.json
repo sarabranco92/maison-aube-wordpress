@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "850px",
+      "wideSize": "1220px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "cream",
+          "color": "#faf7f0",
+          "name": "Crème"
+        },
+        {
+          "slug": "ink",
+          "color": "#352b25",
+          "name": "Espresso"
+        },
+        {
+          "slug": "orange",
+          "color": "#8b4d2e",
+          "name": "Noisette"
+        },
+        {
+          "slug": "green",
+          "color": "#263d32",
+          "name": "Forêt"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Aube Sans, Arial, sans-serif",
+          "slug": "sans",
+          "name": "Aube Sans"
+        },
+        {
+          "fontFamily": "Aube Serif, Georgia, serif",
+          "slug": "serif",
+          "name": "Aube Serif"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|cream",
+      "text": "var:preset|color|ink"
+    },
+    "spacing": {
+      "blockGap": "0"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|sans",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|serif",
+          "fontWeight": "400"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
+}

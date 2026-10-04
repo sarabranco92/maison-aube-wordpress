@@ -1,0 +1,31 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "6.8"
+  },
+  "features": {
+    "networking": true
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "installTheme",
+      "options": {
+        "activate": true
+      },
+      "themeData": {
+        "resource": "url",
+        "url": "https://sarabranco.xyz/projects/maison-aube/maison-aube-theme.zip"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Maison Aube",
+        "blogdescription": "Boulangerie & Caf\u00e9 \u2014 d\u00e9monstration par Sara Branco"
+      }
+    }
+  ]
+}
